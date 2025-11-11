@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:cambien/battery_page.dart';
+import 'package:cambien/biometric_page.dart';
 import 'package:cambien/bluetooth_page.dart';
 import 'package:cambien/camera_page.dart';
 import 'package:cambien/gps_page.dart';
@@ -231,6 +232,21 @@ class _AccelerometerPageState extends State<AccelerometerPage> {
                 textStyle: const TextStyle(fontSize: 16),
               ),
               child: const Text('Đi tới NFC'),
+            ),
+            const SizedBox(height: 20),
+            // Thêm nút bấm mới
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BiometricPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
+              child: const Text('Đi tới Xác thực Sinh trắc học'),
             ),
         ],
       ),

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Ứng dụng cần sử dụng Face ID để xác thực và bảo vệ tài khoản của bạn.</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Ứng dụng này cần truy cập Bluetooth để tìm và kết nối với các thiết bị ngoại vi.</string>
 	<key>NSCameraUsageDescription</key>
