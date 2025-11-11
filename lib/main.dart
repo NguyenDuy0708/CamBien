@@ -6,6 +6,7 @@ import 'package:cambien/gps_page.dart';
 import 'package:cambien/gyroscope_page.dart';
 import 'package:cambien/light_sensor_page.dart';
 import 'package:cambien/magnetometer_page.dart';
+import 'package:cambien/npc_page.dart';
 import 'package:cambien/proximity_sensor_page.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
@@ -215,6 +216,21 @@ class _AccelerometerPageState extends State<AccelerometerPage> {
                 textStyle: const TextStyle(fontSize: 16),
               ),
               child: const Text('Đi tới Quản lý Bluetooth'),
+            ),
+            const SizedBox(height: 20),
+            // Thêm nút bấm mới
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const NfcPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
+              child: const Text('Đi tới NFC'),
             ),
         ],
       ),
