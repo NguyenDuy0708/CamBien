@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:cambien/battery_page.dart';
+import 'package:cambien/bluetooth_page.dart';
 import 'package:cambien/camera_page.dart';
 import 'package:cambien/gps_page.dart';
 import 'package:cambien/gyroscope_page.dart';
@@ -194,13 +195,27 @@ class _AccelerometerPageState extends State<AccelerometerPage> {
                   MaterialPageRoute(builder: (context) => const BatteryPage()),
                 );
               },
-              child: const Text('Đi tới Quản lý Pin'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
                 textStyle: const TextStyle(fontSize: 16),
               ),
+              child: const Text('Đi tới Quản lý Pin'),
             ),
-
+            const SizedBox(height: 20),
+            // Thêm nút bấm mới
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const BluetoothPage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
+              child: const Text('Đi tới Quản lý Bluetooth'),
+            ),
         ],
       ),
       )

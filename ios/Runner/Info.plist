@@ -4,7 +4,6 @@
 <dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Ứng dụng này cần truy cập Bluetooth để tìm và kết nối với các thiết bị ngoại vi.</string>
-
 	<key>NSCameraUsageDescription</key>
 	<string>Ứng dụng này cần truy cập camera để chụp ảnh.</string>
 	<key>NSMicrophoneUsageDescription</key>
