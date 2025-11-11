@@ -9,6 +9,7 @@ import 'package:cambien/light_sensor_page.dart';
 import 'package:cambien/magnetometer_page.dart';
 import 'package:cambien/npc_page.dart';
 import 'package:cambien/proximity_sensor_page.dart';
+import 'package:cambien/storage_page.dart';
 import 'package:flutter/material.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 void main() {
@@ -247,6 +248,21 @@ class _AccelerometerPageState extends State<AccelerometerPage> {
                 textStyle: const TextStyle(fontSize: 16),
               ),
               child: const Text('Đi tới Xác thực Sinh trắc học'),
+            ),
+            const SizedBox(height: 20),
+            // Thêm nút bấm mới
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const StoragePage()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                textStyle: const TextStyle(fontSize: 16),
+              ),
+              child: const Text('Đi tới Lưu trữ & Hệ thống Tệp'),
             ),
         ],
       ),
